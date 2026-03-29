@@ -1,6 +1,7 @@
 # Личный проект «Кекстаграм»
 
 [Александр Волков](https://up.htmlacademy.ru/javascript-individual/2/user/2657291).
+[Pavel Chirikhin]
 
 _Не удаляйте и не изменяйте самовольно файлы и папки:_
 _`.editorconfig`, `.eslintrc`, `.gitattributes`, `.gitignore`, `package-lock.json`, `package.json`., `.github`_
