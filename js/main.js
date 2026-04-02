@@ -1,6 +1,4 @@
-import { createPhotoDescription } from './utils.js';
-import { MAX_ID } from './temporary-data.js';
+import { renderPhotos } from './rendering-thumbnails.js';
+import { photos } from './data.js';
 
-const photos = Array.from({length: MAX_ID}, createPhotoDescription);
-
-console.log(photos);
+renderPhotos(photos);
