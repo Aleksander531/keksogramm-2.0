@@ -1,3 +1,6 @@
+import { photos } from './data.js';
+import { openBigPicture } from './big-picture.js';
+
 export const renderPhotos = (photosArray) => {
   const templatePictureElement = document.querySelector('#picture').content;
   const templateLinkElement = templatePictureElement.querySelector('.picture');
@@ -22,4 +25,14 @@ export const renderPhotos = (photosArray) => {
   });
 
   containerImg.appendChild(fragment);
+  const thumbnails = document.querySelectorAll('.picture');
+
+  thumbnails.forEach((thumbnail, index) => {
+    thumbnail.addEventListener('click', (evt) => {
+      evt.preventDefault();
+      openBigPicture(photos[index]);
+    });
+  });
 };
+
+
